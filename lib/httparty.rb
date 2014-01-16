@@ -77,11 +77,11 @@ module HTTParty
     #     include HTTParty
     #     logger Logger.new('http_logger'), :info, :apache
     #   end
-    def logger(logger, level=:info, format=:apache)
-      default_options[:logger]     = logger
-      default_options[:log_level]  = level
-      default_options[:log_format] = format
-    end
+    #def logger(logger, level=:info, format=:apache)
+    #  default_options[:logger]     = logger
+    #  default_options[:log_level]  = level
+    #  default_options[:log_format] = format
+    #end
 
     # Allows setting http proxy information to be used
     #
