@@ -1,6 +1,7 @@
 module HTTParty
   class Request #:nodoc:
     SupportedHTTPMethods = [
+      Net::HTTP::Purge,
       Net::HTTP::Get,
       Net::HTTP::Post,
       Net::HTTP::Patch,

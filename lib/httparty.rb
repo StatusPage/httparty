@@ -450,6 +450,18 @@ module HTTParty
       perform_request Net::HTTP::Post, path, options, &block
     end
 
+    # Allows making a purge request to a url.
+    #
+    #   class Foo
+    #     include HTTParty
+    #   end
+    #
+    #   # Simple purge with full url
+    #   Foo.purge('http://foo.com/resource.json')
+    def purge(path, options={}, &block)
+      perform_request Net::HTTP::Purge, path, options, &block
+    end
+
     # Perform a PATCH request to a path
     def patch(path, options={}, &block)
       perform_request Net::HTTP::Patch, path, options, &block
